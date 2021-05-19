@@ -1,0 +1,1 @@
+SELECT * FROM theater.staff;
