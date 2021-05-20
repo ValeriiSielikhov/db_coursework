@@ -1,0 +1,10 @@
+INSERT INTO theater.actors VALUE(1, 175, 'Baritone', 1);
+INSERT INTO theater.actors VALUE(2, 180, 'Tenor', 5);
+INSERT INTO theater.actors VALUE(3, 177, 'Tenor', 11);
+INSERT INTO theater.actors VALUE(4, 166, 'Mezzo-Soprano', 3);
+INSERT INTO theater.actors VALUE(5, 184, 'Baritone', 18);
+INSERT INTO theater.actors VALUE(6, 190, 'Bass', 2);
+INSERT INTO theater.actors VALUE(7, 183, 'Baritone', 4);
+INSERT INTO theater.actors VALUE(8, 170, 'Soprano', 6);
+INSERT INTO theater.actors VALUE(9, 182, 'Bass', 10);
+INSERT INTO theater.actors VALUE(10, 168, 'Contralto ', 12);
