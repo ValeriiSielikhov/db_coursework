@@ -1,0 +1,10 @@
+INSERT INTO theater.authors VALUE(1, 'Thornton Wilder', 'America', '20 century');
+INSERT INTO theater.authors VALUE(2, 'Christopher Marlowe', 'England', '17 century');
+INSERT INTO theater.authors VALUE(3, 'Noel Coward', 'England', '20 century');
+INSERT INTO theater.authors VALUE(4, 'David Mamet', 'America', '20 century');
+INSERT INTO theater.authors VALUE(5, 'Sphocles', 'Athens', '429 BC');
+INSERT INTO theater.authors VALUE(6, 'August Strindberg', 'Sweden', '19 century');
+INSERT INTO theater.authors VALUE(7, 'Euripides', 'Greece', '431 BCE');
+INSERT INTO theater.authors VALUE(8, 'Tennessee Williams', 'America', '20 century');
+INSERT INTO theater.authors VALUE(9, 'George Bernard Shaw', 'Ireland', '19 century');
+INSERT INTO theater.authors VALUE(10, 'Samuel Beckett', 'Ireland', '20 century');
