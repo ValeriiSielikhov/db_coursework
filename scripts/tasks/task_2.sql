@@ -63,6 +63,21 @@ delimiter ;
 CALL genre('Tragedy');
 
 
+DROP PROCEDURE IF EXISTS played_all;
+delimiter $$
+CREATE PROCEDURE played_all() 
+	BEGIN
+		DECLARE c INT DEFAULT 0;
+		SELECT COUNT(id_performance) into c FROM performances;
+		SELECT stagings.name_ AS 'name', performances.date_ AS 'date' FROM stagings, performances
+		WHERE  stagings.id_staging = performances.id_staging
+		UNION
+        SELECT 'Total:', c;
+	END$$
+delimiter ;
+CALL played_all();
+
+
 DROP PROCEDURE IF EXISTS played_period;
 delimiter $$
 CREATE PROCEDURE played_period(IN b DATE, in e DATE) 
