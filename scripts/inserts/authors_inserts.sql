@@ -8,3 +8,7 @@ INSERT INTO theater.authors VALUE(7, 'Euripides', 'Greece', '431 BCE');
 INSERT INTO theater.authors VALUE(8, 'Tennessee Williams', 'America', '20 century');
 INSERT INTO theater.authors VALUE(9, 'George Bernard Shaw', 'Ireland', '19 century');
 INSERT INTO theater.authors VALUE(10, 'Samuel Beckett', 'Ireland', '20 century');
+INSERT INTO theater.authors VALUE(11, 'Arthur Miller', 'America', '20 century');
+INSERT INTO theater.authors VALUE(12, 'Edward Albee', 'America', '20 century');
+INSERT INTO theater.authors VALUE(13, 'Eugene O’Neill', 'America', '20 century');
+INSERT INTO theater.authors VALUE(14, 'Lynn Nottage', 'America', '21 century');

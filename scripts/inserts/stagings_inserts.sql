@@ -4,5 +4,9 @@ INSERT INTO theater.stagings VALUE(3, 'Oedipus the King', 'Tragedy', '16+', 429 
 INSERT INTO theater.stagings VALUE(4, 'Medea', 'Tragedy', '12+', 431, '2021-08-02', 7, 2, 3, 5);
 INSERT INTO theater.stagings VALUE(5, 'Arms and the Man', 'Comedy', '6+', 1894, '2021-06-06', 9, 1, 4, 5);
 INSERT INTO theater.stagings VALUE(6, 'A Streetcar Named Desire', 'Southern Gothic', '18+', 1947 , '2021-03-01', 1, 1, 3, 6);
-INSERT INTO theater.stagings VALUE(7, 'The Cherry Orchard', 'Вrama', '12+', 1978, '2021-02-07', 8, 1, 3, 6);
+INSERT INTO theater.stagings VALUE(7, 'The Cherry Orchard', 'Drama', '12+', 1978, '2021-02-07', 8, 1, 3, 6);
 INSERT INTO theater.stagings VALUE(8, 'Betrayal', 'Comedy', '16+', 1904 , '2021-04-10', 6, 2, 4, 5);
+INSERT INTO theater.stagings VALUE(9, ' Death of a Salesman', 'Tragedy', '10+', 1949, '2020-12-12', 11, 1, 3, 5);
+INSERT INTO theater.stagings VALUE(10, 'Who’s Afraid of Virginia Woolf?', 'Drama', '18+', 1962 , '2021-01-20', 12, 2, 4, 6);
+INSERT INTO theater.stagings VALUE(11, 'Long Day’s Journey into Night', 'Drama', '14+', 1956, '2021-02-18', 13, 2, 3, 5);
+INSERT INTO theater.stagings VALUE(12, 'Ruined', 'Drama', '6+', 2008 , '2021-03-08', 14, 1, 4, 6);
