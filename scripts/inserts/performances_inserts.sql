@@ -14,3 +14,4 @@ INSERT INTO theater.performances VALUES(13, '2021-01-07', '22pm', '2029-12-12', 
 INSERT INTO theater.performances VALUES(14, '2021-01-28', '20pm', '2021-01-20', 'winter', 10);
 INSERT INTO theater.performances VALUES(15, '2021-02-27', '21pm', '2021-02-18', 'winter', 11);
 INSERT INTO theater.performances VALUES(16, '2021-03-12', '18pm', '2021-03-08', 'spring', 12);
+INSERT INTO theater.performances VALUES(17, '2021-03-09', '19pm', '2021-03-09', 'spring', 6);

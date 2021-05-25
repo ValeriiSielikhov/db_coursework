@@ -66,3 +66,20 @@ CREATE PROCEDURE actor_regiser(IN t TEXT, IN g TEXT)
 	END$$
 delimiter ;
 CALL actor_regiser('Joy Barr','Matt Montes');
+
+
+DROP PROCEDURE IF EXISTS role_age;
+delimiter $$
+CREATE PROCEDURE role_age(IN t TEXT, IN g TEXT) 
+	BEGIN
+		DECLARE r, k INT DEFAULT 0;
+		SELECT id_staff INTO r FROM staff
+        WHERE full_name = t;
+		SELECT id_actor INTO k FROM actors
+        WHERE actors.id_staff = r;
+		SELECT rolee.name_ AS 'role' FROM played_plays, rolee, performances, stagings
+		WHERE played_plays.id_actor = k AND played_plays.id_role = rolee.id_role AND played_plays.id_performance = performances.id_performance
+        AND performances.id_staging = stagings.id_staging AND stagings.age = g;
+	END$$
+delimiter ;
+CALL role_age('Joy Barr', '12+');
