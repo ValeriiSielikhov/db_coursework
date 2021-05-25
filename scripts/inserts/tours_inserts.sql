@@ -1,6 +1,9 @@
-INSERT INTO theater.tours VALUE('2021-08-01', '2021-10-01', 6);
-INSERT INTO theater.tours VALUE('2021-04-15', '2021-06-20', 4);
-INSERT INTO theater.tours VALUE('2021-08-01', '2021-10-01', 26);
-INSERT INTO theater.tours VALUE('2021-04-15', '2021-06-20', 28);
-INSERT INTO theater.tours VALUE('2021-07-20', '2021-08-15', 15);
-INSERT INTO theater.tours VALUE('2021-07-20', '2021-08-15', 8);
+INSERT INTO theater.tours VALUE('2021-08-01', '2021-10-01', 6, 1);
+INSERT INTO theater.tours VALUE('2021-04-15', '2021-06-20', 4, 2);
+INSERT INTO theater.tours VALUE('2021-08-01', '2021-10-01', 26, 1);
+INSERT INTO theater.tours VALUE('2021-04-15', '2021-06-20', 28, 1);
+INSERT INTO theater.tours VALUE('2021-07-20', '2021-08-15', 15, 2);
+INSERT INTO theater.tours VALUE('2021-07-20', '2021-08-15', 8, 2);
+INSERT INTO theater.tours VALUE('2021-02-02', '2021-02-28', 1, 5);
+INSERT INTO theater.tours VALUE('2021-03-03', '2021-03-20', 1, 5);
+INSERT INTO theater.tours VALUE('2021-03-03', '2021-03-20', 25, 5);

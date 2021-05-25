@@ -94,8 +94,10 @@ CREATE TABLE theater.tours(
 	start_ DATE NOT NULL,
     end_ DATE NOT NULL,
     id_staff INT,
+    id_staging INT,
     
-	CONSTRAINT tour_staff FOREIGN KEY (id_staff) REFERENCES staff(id_staff)
+	CONSTRAINT tour_staff FOREIGN KEY (id_staff) REFERENCES staff(id_staff),
+    CONSTRAINT tour_staging FOREIGN KEY (id_staging) REFERENCES stagings(id_staging)
 );
 
 
