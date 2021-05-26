@@ -5,7 +5,7 @@ DROP PROCEDURE IF EXISTS personal;
 delimiter $$
 CREATE PROCEDURE personal()
 	BEGIN
-		SELECT id_staff AS'id' , full_name AS 'full name' FROM staff
+		SELECT name_ AS'name' , main_role AS 'full name' FROM staff
 		UNION
         SELECT 'Total', COUNT(id_staff) FROM  staff;
 	END$$
@@ -23,7 +23,7 @@ CREATE PROCEDURE actors()
         SELECT 'Total', COUNT(id_actor) from actors;
 	END$$
 delimiter ;
-call actors();
+CALL actors();
 
 
 DROP PROCEDURE IF EXISTS musicians;
@@ -32,10 +32,10 @@ CREATE PROCEDURE musicians()
 	BEGIN 
 		DECLARE c INT DEFAULT 0;
 		SELECT COUNT(id_musicians) INTO c FROM musicians;
-		SELECT staff.full_name FROM staff, musicians
+		SELECT staff.full_name, musicians.musical_instrument FROM staff, musicians
         WHERE staff.id_staff = musicians.id_musicians
 		UNION
-        SELECT CONCAT('Total: ', CONVERT(c, CHAR)); 
+        SELECT CONCAT('Total: ', CONVERT(c, CHAR)), ''; 
 	END$$
 delimiter ;
 CALL musicians();
@@ -64,7 +64,7 @@ CREATE PROCEDURE sex(IN s TEXT)
         SELECT 'Total', c;
 	END$$
 delimiter ;
-call sex('f');
+CALL sex('f');
 
 
 DROP PROCEDURE IF EXISTS year_of_birth;
@@ -80,7 +80,7 @@ CREATE PROCEDURE year_of_birth(IN n INT)
         SELECT 'Total', c;
 	END$$
 delimiter ;  
-call year_of_birth(2000);
+CALL year_of_birth(2000);
 
 
 DROP PROCEDURE IF EXISTS age;
@@ -96,7 +96,7 @@ CREATE PROCEDURE age(IN n INT)
         SELECT 'Total', c;
 	END$$
 delimiter ;  
-call age(20);
+CALL age(24);
 
 
 DROP PROCEDURE IF EXISTS children;
@@ -112,7 +112,7 @@ CREATE PROCEDURE children(IN s TEXT)
         SELECT 'Total', c;
 	END$$
 delimiter ;
-call children('no');
+CALL children('no');
 
 
 DROP PROCEDURE IF EXISTS salary;
@@ -128,4 +128,4 @@ CREATE PROCEDURE salary(IN n INT)
         SELECT 'Total', c;
 	END$$
 delimiter ;
-call salary(1000);
+CALL salary(1000);

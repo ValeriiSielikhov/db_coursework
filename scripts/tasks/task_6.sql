@@ -24,4 +24,4 @@ CREATE PROCEDURE rolee(IN t TEXT)
 				AND actors.voice = tembr AND (actors.height BETWEEN h-5 AND h+5);
 		END$$
 delimiter ;      
-CALL rolee('Pablo'); 
+CALL rolee('Jon'); 

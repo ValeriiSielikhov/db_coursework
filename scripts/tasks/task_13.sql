@@ -27,3 +27,16 @@ CREATE PROCEDURE place_performance(IN t TEXT)
 	END$$
 delimiter ;
 CALL place_performance('A Streetcar Named Desire');
+
+
+DROP PROCEDURE IF EXISTS place_premiere;
+delimiter $$
+CREATE PROCEDURE place_premiere() 
+	BEGIN
+		SELECT stagings.name_ as 'name', (20 - COUNT(tickets.id_performance)) AS 'free place',
+		performances.date_ AS 'premiere' FROM tickets, performances, stagings
+		WHERE tickets.date_ = performances.premiere AND performances.id_staging = stagings.id_staging AND performances.id_performance = tickets.id_performance
+		GROUP BY tickets.id_performance;
+	END$$
+delimiter ;
+CALL place_premiere();

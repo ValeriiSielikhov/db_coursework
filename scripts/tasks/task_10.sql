@@ -1,6 +1,18 @@
 USE theater; 
 
 
+DROP PROCEDURE IF EXISTS count_rolee; 
+delimiter $$
+CREATE PROCEDURE count_rolee()
+	BEGIN
+		SELECT name_ AS'name' , main_role FROM rolee
+		UNION
+        SELECT 'Total', COUNT(id_role) FROM  rolee;
+	END$$
+delimiter ;
+CALL count_rolee();
+
+
 DROP PROCEDURE IF EXISTS role_actor;
 delimiter $$
 CREATE PROCEDURE role_actor(IN t TEXT) 

@@ -1,6 +1,7 @@
 USE theater; 
 
 
+-- the same 
 DROP PROCEDURE IF EXISTS played;
 delimiter $$
 CREATE PROCEDURE played()
