@@ -5,7 +5,7 @@ DROP PROCEDURE IF EXISTS personal;
 delimiter $$
 CREATE PROCEDURE personal()
 	BEGIN
-		SELECT name_ AS'name' , main_role AS 'full name' FROM staff
+		SELECT id_staff AS'id' , full_name AS 'full name' FROM staff
 		UNION
         SELECT 'Total', COUNT(id_staff) FROM  staff;
 	END$$
