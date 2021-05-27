@@ -1,0 +1,1480 @@
+{
+	"info": {
+		"_postman_id": "e2064c56-d9aa-4591-85b9-cc3ba0bc42e8",
+		"name": "db_valera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "task_1",
+			"item": [
+				{
+					"name": "get staff",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/staff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"staff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get musicians",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/musicians",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"musicians"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/actors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get staff by exp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/staff_by_exp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"staff_by_exp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get staff by sex",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/staff_by_sex/:sex",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"staff_by_sex",
+								":sex"
+							],
+							"variable": [
+								{
+									"key": "sex",
+									"value": "f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get staff by date of birth",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/staff_by_date_of_birth/:date_of_birth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"staff_by_date_of_birth",
+								":date_of_birth"
+							],
+							"variable": [
+								{
+									"key": "date_of_birth",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get staff by age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/staff_by_age/:age",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"staff_by_age",
+								":age"
+							],
+							"variable": [
+								{
+									"key": "age",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get staff by childrenAvail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/staff_by_children/:childrenAvail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"staff_by_children",
+								":childrenAvail"
+							],
+							"variable": [
+								{
+									"key": "childrenAvail",
+									"value": "no"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get staff by salary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query1/staff_by_salary/:salary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query1",
+								"staff_by_salary",
+								":salary"
+							],
+							"variable": [
+								{
+									"key": "salary",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_2",
+			"item": [
+				{
+					"name": "get performances",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query2/performance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query2",
+								"performance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get played by season",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query2/season/:season_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query2",
+								"season",
+								":season_name"
+							],
+							"variable": [
+								{
+									"key": "season_name",
+									"value": "spring"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get played by now",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query2/played",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query2",
+								"played"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get performances by genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query2/genre/:genre_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query2",
+								"genre",
+								":genre_name"
+							],
+							"variable": [
+								{
+									"key": "genre_name",
+									"value": "tragedy"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get played all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query2/played_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query2",
+								"played_all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get played during period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query2/played_period/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query2",
+								"played_period",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2021-01-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-06-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_3",
+			"item": [
+				{
+					"name": "get played by now",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query2/played",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query2",
+								"played"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get played by genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query3/played_genre/:genre_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query3",
+								"played_genre",
+								":genre_name"
+							],
+							"variable": [
+								{
+									"key": "genre_name",
+									"value": "Tragedy"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get played by genre in period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query3/played_period_genre/:date_min/:date_max/:genre_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query3",
+								"played_period_genre",
+								":date_min",
+								":date_max",
+								":genre_name"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2020-01-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-05-01"
+								},
+								{
+									"key": "genre_name",
+									"value": "Comedy"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_4",
+			"item": [
+				{
+					"name": "get authors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query4/author",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query4",
+								"author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get authors by century",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query4/author_century/:century_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query4",
+								"author_century",
+								":century_name"
+							],
+							"variable": [
+								{
+									"key": "century_name",
+									"value": "20 century"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get authors by country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query4/author_country/:country_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query4",
+								"author_country",
+								":country_name"
+							],
+							"variable": [
+								{
+									"key": "country_name",
+									"value": "America"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get authors by genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query4/author_genre/:genre_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query4",
+								"author_genre",
+								":genre_name"
+							],
+							"variable": [
+								{
+									"key": "genre_name",
+									"value": "Tragedy"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get authors by genre played",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query4/author_genre_played/:genre_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query4",
+								"author_genre_played",
+								":genre_name"
+							],
+							"variable": [
+								{
+									"key": "genre_name",
+									"value": "Tragedy"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get authors by played in period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query4/author_period/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query4",
+								"author_period",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2021-01-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-04-29"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_5",
+			"item": [
+				{
+					"name": "get performances by genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query5/performance_genre/:genre_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query5",
+								"performance_genre",
+								":genre_name"
+							],
+							"variable": [
+								{
+									"key": "genre_name",
+									"value": "Drama"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get performances by author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query5/performance_author/:author_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query5",
+								"performance_author",
+								":author_name"
+							],
+							"variable": [
+								{
+									"key": "author_name",
+									"value": "Noel Coward"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get performances by country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query5/performance_country/:country_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query5",
+								"performance_country",
+								":country_name"
+							],
+							"variable": [
+								{
+									"key": "country_name",
+									"value": "England"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get performances by century",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query5/performance_century/:century_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query5",
+								"performance_century",
+								":century_name"
+							],
+							"variable": [
+								{
+									"key": "century_name",
+									"value": "20 century"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get first performance in period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query5/first_performance/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query5",
+								"first_performance",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2021-03-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-05-31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_6",
+			"item": [
+				{
+					"name": "get actors suitable for role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query6/rolee/:role_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query6",
+								"rolee",
+								":role_name"
+							],
+							"variable": [
+								{
+									"key": "role_name",
+									"value": "Jon"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_7",
+			"item": [
+				{
+					"name": "get actors with ranks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query7/rankk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query7",
+								"rankk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get actors with ranks in period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query7/rank_period/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query7",
+								"rank_period",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2020-01-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get actors with ranks gotten by competition",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query7/rank_getted/:competition_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query7",
+								"rank_getted",
+								":competition_name"
+							],
+							"variable": [
+								{
+									"key": "competition_name",
+									"value": "Theatrical Talents"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get actors with ranks by sex",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query7/sex_rank/:sex",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query7",
+								"sex_rank",
+								":sex"
+							],
+							"variable": [
+								{
+									"key": "sex",
+									"value": "m"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get actors with ranks by age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query7/rank_age/:age",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query7",
+								"rank_age",
+								":age"
+							],
+							"variable": [
+								{
+									"key": "age",
+									"value": "35"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_8",
+			"item": [
+				{
+					"name": "get staff on tour in period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query8/tour_coming/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query8",
+								"tour_coming",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2021-01-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-05-30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get staff on tour in period with specific performance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query8/tour_outcoming/:date_min/:date_max/:performance_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query8",
+								"tour_outcoming",
+								":date_min",
+								":date_max",
+								":performance_name"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2021-01-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-12-30"
+								},
+								{
+									"key": "performance_name",
+									"value": "Doctor Faustus"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_9",
+			"item": [
+				{
+					"name": "get staff of the performance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query9/performance_list/:performance_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query9",
+								"performance_list",
+								":performance_name"
+							],
+							"variable": [
+								{
+									"key": "performance_name",
+									"value": "Doctor Faustus"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_10",
+			"item": [
+				{
+					"name": "count roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query10/count_rolee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query10",
+								"count_rolee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get roles of actor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query10/role_actor/:actor_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query10",
+								"role_actor",
+								":actor_name"
+							],
+							"variable": [
+								{
+									"key": "actor_name",
+									"value": "Joy Barr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get roles of actor in period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query10/role_period/:actor_name/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query10",
+								"role_period",
+								":actor_name",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "actor_name",
+									"value": "Joy Barr"
+								},
+								{
+									"key": "date_min",
+									"value": "2021-05-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-06-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get roles of actor in period Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query10/role_genre/:actor_name/:genre_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query10",
+								"role_genre",
+								":actor_name",
+								":genre_name"
+							],
+							"variable": [
+								{
+									"key": "actor_name",
+									"value": "Joy Barr"
+								},
+								{
+									"key": "genre_name",
+									"value": "Comedy"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get roles of actor with director",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query10/actor_regiser/:actor_name/:director_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query10",
+								"actor_regiser",
+								":actor_name",
+								":director_name"
+							],
+							"variable": [
+								{
+									"key": "actor_name",
+									"value": "Joy Barr"
+								},
+								{
+									"key": "director_name",
+									"value": "Matt Montes"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get roles of actor in performances for children",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query10/role_age/:actor_name/:age_category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query10",
+								"role_age",
+								":actor_name",
+								":age_category"
+							],
+							"variable": [
+								{
+									"key": "actor_name",
+									"value": "Joy Barr"
+								},
+								{
+									"key": "age_category",
+									"value": "12+"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_11",
+			"item": [
+				{
+					"name": "get all tickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query11/tickets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query11",
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tickets by performance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query11/tickets_performance/:performance_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query11",
+								"tickets_performance",
+								":performance_name"
+							],
+							"variable": [
+								{
+									"key": "performance_name",
+									"value": "Oedipus the King"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tickets by premieres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query11/tickets_premiere",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query11",
+								"tickets_premiere"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tickets by premieres Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query11/tickets_period/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query11",
+								"tickets_period",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2021-03-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-05-30"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_12",
+			"item": [
+				{
+					"name": "get money for performance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query12/money_for_performance/:performance_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query12",
+								"money_for_performance",
+								":performance_name"
+							],
+							"variable": [
+								{
+									"key": "performance_name",
+									"value": "Oedipus the King"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get money in period",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query12/money_for_period/:date_min/:date_max",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query12",
+								"money_for_period",
+								":date_min",
+								":date_max"
+							],
+							"variable": [
+								{
+									"key": "date_min",
+									"value": "2021-03-01"
+								},
+								{
+									"key": "date_max",
+									"value": "2021-05-31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task_13",
+			"item": [
+				{
+					"name": "get free places overall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query13/place",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query13",
+								"place"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get free places by performance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query13/place_performance/:performance_name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query13",
+								"place_performance",
+								":performance_name"
+							],
+							"variable": [
+								{
+									"key": "performance_name",
+									"value": "A Streetcar Named Desire"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get free places by premiere",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/query13/place_premiere",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"query13",
+								"place_premiere"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
